@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informasi Cuaca Harian</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <span class="logo">☁️ CuacaKu</span>
+      <ul>
+        <li><a href="#kondisi">Kondisi</a></li>
+        <li><a href="#tabel">Data</a></li>
+        <li><a href="#jenis-awan">Jenis Awan</a></li>
+        <li><a href="#video">Video</a></li>
+      </ul>
+    </nav>
+
+    <header class="hero">
+      <div class="cloud cloud-1"></div>
+      <div class="cloud cloud-2"></div>
+      <div class="cloud cloud-3"></div>
+      <div class="hero-text">
+        <p class="badge">Selasa, 24 November 2026</p>
+        <h1>Informasi Cuaca Harian</h1>
+        <p>Dari terang menjadi mendung: pantau kondisi cuaca dalam teks, tabel, dan media.</p>
+        <a class="btn" href="#kondisi">Lihat Cuaca</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- TEKS -->
+      <section id="kondisi">
+        <h2>Kondisi Hari Ini</h2>
+        <p class="lead">
+          Pagi hari <strong>cerah</strong>, lalu menjelang sore langit berubah
+          <em>mendung</em> karena awan tumbuh dan berpotensi hujan ringan.
+        </p>
+        <div class="cards">
+          <div class="card">
+            <span class="icon">🌡️</span>
+            <h3>32°C</h3>
+            <p>Suhu maksimum</p>
+          </div>
+          <div class="card">
+            <span class="icon">❄️</span>
+            <h3>24°C</h3>
+            <p>Suhu minimum</p>
+          </div>
+          <div class="card">
+            <span class="icon">💧</span>
+            <h3>80%</h3>
+            <p>Kelembapan</p>
+          </div>
+          <div class="card">
+            <span class="icon">💨</span>
+            <h3>10 km/jam</h3>
+            <p>Angin Barat Daya</p>
+          </div>
+          <div class="card">
+            <span class="icon">⏱️</span>
+            <h3>1010 hPa</h3>
+            <p>Tekanan udara</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TABEL -->
+      <section id="tabel">
+        <h2>Data Cuaca Tiga Hari Terakhir</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Tanggal</th>
+                <th>Suhu Maks (°C)</th>
+                <th>Suhu Min (°C)</th>
+                <th>Kelembapan (%)</th>
+                <th>Curah Hujan (mm)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>22 November 2026</td>
+                <td>33.2</td>
+                <td>25.0</td>
+                <td>82</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>23 November 2026</td>
+                <td>31.8</td>
+                <td>24.5</td>
+                <td>88</td>
+                <td>35</td>
+              </tr>
+              <tr>
+                <td>24 November 2026</td>
+                <td>32.0</td>
+                <td>24.0</td>
+                <td>85</td>
+                <td>20</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- GALERI AWAN -->
+      <section id="jenis-awan">
+        <h2>Jenis-Jenis Awan</h2>
+        <p class="lead">Awan punya banyak bentuk, dan tiap bentuk menandakan kondisi cuaca yang berbeda.</p>
+        <div class="gallery">
+          <figure class="cloud-card">
+            <img src="img/cirrus.jpg" alt="Awan cirrus tipis seperti bulu di langit tinggi" />
+            <figcaption>
+              <h3>Cirrus</h3>
+              <p>Awan tinggi, tipis, seperti bulu. Biasanya tanda cuaca cerah, kadang pertanda perubahan cuaca.</p>
+            </figcaption>
+          </figure>
+          <figure class="cloud-card">
+            <img src="img/cumulus.jpg" alt="Awan cumulus putih menggumpal seperti kapas" />
+            <figcaption>
+              <h3>Cumulus</h3>
+              <p>Awan putih menggumpal seperti kapas. Tanda cuaca cerah, tapi bisa tumbuh menjadi awan hujan.</p>
+            </figcaption>
+          </figure>
+          <figure class="cloud-card">
+            <img src="img/stratus.jpg" alt="Awan stratus abu-abu menutupi seluruh langit" />
+            <figcaption>
+              <h3>Stratus</h3>
+              <p>Awan berlapis rendah berwarna abu-abu yang menutupi langit. Membawa langit mendung dan gerimis.</p>
+            </figcaption>
+          </figure>
+          <figure class="cloud-card">
+            <img src="img/awan.jpg" alt="Awan cumulonimbus menjulang di langit sore" />
+            <figcaption>
+              <h3>Cumulonimbus</h3>
+              <p>Awan menjulang tinggi penghasil hujan lebat, petir, dan angin kencang.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- VIDEO -->
+      <section id="video">
+        <h2>Video: Perubahan Cuaca, Terang menjadi Mendung</h2>
+        <figure class="video-box">
+          <iframe
+            src="https://www.youtube.com/embed/8r4uovRZ9UY"
+            title="Perubahan Cuaca, Terang menjadi Mendung"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <figcaption>Video pembelajaran tentang perubahan cuaca dari terang menjadi mendung.</figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 - Abiel Diva (12824064) - Sistem Informasi Meteorologi ITB</p>
+    </footer>
+  </body>
+</html>
